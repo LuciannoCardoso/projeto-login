@@ -24,6 +24,8 @@ section#login{
     border-radius: 20px;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.450);
     overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 div#formulario{
     padding: 10px;
@@ -33,4 +35,47 @@ div#imagem{
     background-size: cover;
     background-position: left bottom;
     height: 200px;
+}
+@media (min-width: 768px){
+    body, html{
+        background: #1A2980;
+        background: -webkit-linear-gradient(to right, #3ba2dd, #1A2980);
+        background: linear-gradient(to right, #3ba2dd, #1A2980); 
+
+    }
+    section#login{
+       display: flex;
+       flex-direction: row-reverse;
+       width: 70vw;
+       
+    }
+    div#formulario{
+        width: 70%;
+        height: 100%;
+    }
+    div#imagem{
+        width: 30%;
+        height: 100%;
+    }
+}
+@media (min-width: 1024px){
+    body, html{
+        background: #1A2980;
+        background: -webkit-linear-gradient(to right, #3ba2dd, #1A2980);
+        background: linear-gradient(to right, #3ba2dd, #1A2980); 
+
+    }
+    section#login{
+       display: flex;
+       flex-direction: row-reverse;
+       width: 950px;
+    }
+    div#formulario{
+        width: 60%;
+        height: 100%;
+    }
+    div#imagem{
+        width: 40%;
+        height: 100%;
+    }
 }
