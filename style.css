@@ -39,7 +39,6 @@ div#imagem{
 @media (min-width: 768px){
     body, html{
         background: #1A2980;
-        background: -webkit-linear-gradient(to right, #3ba2dd, #1A2980);
         background: linear-gradient(to right, #3ba2dd, #1A2980); 
 
     }
@@ -61,7 +60,6 @@ div#imagem{
 @media (min-width: 1024px){
     body, html{
         background: #1A2980;
-        background: -webkit-linear-gradient(to right, #3ba2dd, #1A2980);
         background: linear-gradient(to right, #3ba2dd, #1A2980); 
 
     }
