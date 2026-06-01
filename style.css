@@ -30,6 +30,13 @@ section#login{
 div#formulario{
     padding: 10px;
 }
+div#formulario h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+div#formulario p{
+    font-size: 0.8em;
+}
 div#imagem{
     background: #4984A0 url(imagens/pexels-karola-g-6757464\ \(1\).jpg) no-repeat;
     background-size: cover;
@@ -52,6 +59,9 @@ div#imagem{
         width: 70%;
         height: 100%;
     }
+    div#formulario p{
+        font-size: 1em;
+    }
     div#imagem{
         width: 30%;
         height: 100%;
@@ -71,6 +81,9 @@ div#imagem{
     div#formulario{
         width: 60%;
         height: 100%;
+    }
+    div#formulario p{
+        font-size: 1em;
     }
     div#imagem{
         width: 40%;
