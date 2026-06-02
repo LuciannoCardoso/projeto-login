@@ -19,20 +19,20 @@ main{
 }
 section#login{
     background-color: white;
-    width: 250px;
-    height: 520px;
+    width: 270px;
+    height: 535px;
     border-radius: 20px;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.450);
     overflow: hidden;
-    transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transition: width 0.3s, height 0.3s;
 }
 div#formulario{
     padding: 10px;
 }
 div#formulario h1{
     text-align: center;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 div#formulario p{
     font-size: 0.8em;
@@ -41,20 +41,42 @@ div#imagem{
     background: #4984A0 url(imagens/pexels-karola-g-6757464\ \(1\).jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
-    height: 200px;
+    height: 175px;
 }
 form div.campo{
-    background-color: gray; 
-    margin: 5px 0;
-    height: 40px;
+    background-color: white; 
+    margin: 10px 0;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+form div.campo:focus-within{
+    transform: scale(1.02);
 
-    border-radius: 5px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+div.campo input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 100%;
+    width: calc(100% - 45px);
+    transform: translateY( -7px);
 }
 form label{
     display: none;
 }
+div.campo i.material-icons{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
 form input[type=submit]{
     display: block;
+    margin-top: 20px;
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -93,11 +115,20 @@ form a.botao i{
         background: linear-gradient(to right, #3ba2dd, #1A2980); 
 
     }
-    section#login{
+     section#login{
+        height: 404px;
        display: flex;
        flex-direction: row-reverse;
        width: 70vw;
        
+    }
+    div#formulario h1{
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    div#formulario p{
+        font-size: 0.8em;
+        margin-bottom: 25px;
     }
     div#formulario{
         width: 70%;
